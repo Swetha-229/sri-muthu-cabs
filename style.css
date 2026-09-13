@@ -353,3 +353,12 @@ footer h3 {
     font-size: 22px;
     font-weight: bold;
 }
+.logo div {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo small {
+    font-size: 13px;
+    margin-top: 3px;
+}
