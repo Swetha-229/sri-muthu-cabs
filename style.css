@@ -472,3 +472,13 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+.email-link {
+    color: #10244a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
