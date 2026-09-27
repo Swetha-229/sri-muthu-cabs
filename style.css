@@ -473,12 +473,13 @@ footer p {
     }
 }
 .email-link {
-    color: #10244a;
+    color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 17px;
 }
 
 .email-link:hover {
+    color: white;
     text-decoration: underline;
 }
