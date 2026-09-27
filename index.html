@@ -12,7 +12,7 @@
 
     <div class="logo">
 
-        <img src="images/logo.png" alt="SRI MUTHU CABS">
+       <img src="images/logo.png" alt="SRI MUTHU CABS" class="logo-image" id="logoImage">
 
         <div class="logo-text">
             <span>SRI MUTHU CABS</span>
@@ -205,6 +205,29 @@
     <p>© 2026 SRI MUTHU CABS. All Rights Reserved.</p>
 
 </footer>
+<div class="logo-popup" id="logoPopup">
+    <span class="close-logo" id="closeLogo">&times;</span>
+    <img src="images/logo.png" alt="SRI MUTHU CABS Logo">
+</div>
 
+<script>
+    const logoImage = document.getElementById("logoImage");
+    const logoPopup = document.getElementById("logoPopup");
+    const closeLogo = document.getElementById("closeLogo");
+
+    logoImage.addEventListener("click", function () {
+        logoPopup.style.display = "flex";
+    });
+
+    closeLogo.addEventListener("click", function () {
+        logoPopup.style.display = "none";
+    });
+
+    logoPopup.addEventListener("click", function (event) {
+        if (event.target === logoPopup) {
+            logoPopup.style.display = "none";
+        }
+    });
+</script>
 </body>
 </html>
